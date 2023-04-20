@@ -1,0 +1,137 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@700&display=swap');
+
+
+#mobile{
+  width:100%;
+  height:1100px;
+  background:url(../image/texture3.jpg) no-repeat 0 0;
+  background-size:cover;
+}
+.mobile_in{
+  width:1300px;
+  height:900px;
+  position:relative;
+  margin:0 auto;
+  /* background:yellow; */
+}
+
+/*탑제목*/
+h2{
+	font-family: 'Bellota', cursive;
+  font-size:45px;
+  color:#fff;
+  text-shadow:3px 3px 3px #666;
+}
+h3{
+	font-family: 'Raleway', sans-serif;
+	color:#e8e8e8;
+	font-size:18px;
+	font-weight:100;
+  margin-bottom:20px;
+}
+
+/*왼쪽 모바일화면 영역_______________*/
+.mobile_in .mleft{
+  position:relative;
+  width:900px;
+  height:900px;
+  background:rgba(255,255,255,0.3);
+  box-sizing:border-box;
+  float:left;
+  text-align:center;
+  /* background:skyblue; */
+}
+
+#mobile .frame img{width:207px;height:400px;}
+#mobile .frame_in img{width:197px;height:25px;}
+
+.mleft .frame{  /*모바일 틀*/
+  position:absolute;
+  top:40px;
+  left:20px;
+  z-index:1;
+}
+.mleft .frame_in{  /*모바일위쪽 프레임*/
+  position:absolute;
+  top:38px;
+  left:25px;
+  z-index:4;
+}
+.mleft .wireframe{ 
+  position:absolute;
+  top:42px;
+  left:17px;
+  z-index:2;
+  text-align:center;
+}
+.mleft .wireframe ul{display:inline-block;}
+.wireframe ul li{
+  width:195px;
+  height:389px;
+  float:left;
+  margin:10px;
+  cursor:pointer;
+}
+.wireframe ul li img{
+  width:195px;
+  height:389px;
+}
+
+
+/*오른쪽 텍스트 영역________________*/
+.mobile_in .mright{
+  width:300px;
+  height:600px;
+  box-sizing:border-box;
+  float:left;
+  margin-top:150px;
+  padding-left:15px;
+  padding-top:50px;
+  border-radius:0 300px 300px 0;
+  box-shadow:0px 10px 50px rgba(0,0,0,0.3) inset;
+  background:rgba(204,204,204,0.5);
+}
+.rtext img{width:35px;height:40px;}
+.rtext_box .rtitle{
+	font-size:32px;
+	font-family: 'Bebas Neue', cursive;
+	color:#382f31;
+	margin-bottom:5px;
+}
+.rtext_box .rtext{
+	font-size:16px;
+	color:rgb(58, 57, 57);
+	margin-bottom:20px;
+}
+.rtext_box span{
+  display:inline-block;
+  border-radius:50%;
+  width:20px;
+  height:20px;
+}
+.rtext_box .color1{background:#c6e328;}
+.rtext_box .color2{background:#1750af;margin:0 10px;}
+.rtext_box .color3{background:#9b3fa3;}
+
+.rbtn{margin-top:30px;}
+.rbtn ul li{
+	width:100px;
+	height:30px;
+	background:rgba(255,255,255,0.4);
+	margin-right:20px;
+	border:1px solid #fff;
+	border-radius:15px 0 15px 0;
+  margin-bottom:10px;
+	text-align:center;
+	line-height:30px;
+	transition:all 0.5s;
+}
+.rbtn ul li:hover{background:rgba(255,255,255,1);}
+.rbtn ul li a{color:#333;}
+.rbtn ul li:hover a{
+	color:#000;
+	font-weight:bold;
+}
